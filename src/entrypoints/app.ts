@@ -3,6 +3,7 @@ import "../resources/roboto";
 import "../resources/ha-style";
 import "../layouts/home-assistant";
 import "../util/legacy-support";
+import "../resources/ha-style-funkdomotics";
 
 setPassiveTouchGestures(true);
 /* LastPass createElement workaround. See #428 */

@@ -4,7 +4,8 @@
     <link rel="preload" href="<%= latestCoreJS %>" as="script" crossorigin="use-credentials" />
     <link rel="preload" href="<%= latestAppJS %>" as="script" crossorigin="use-credentials" />
     <%= renderTemplate('_header') %>
-    <title>Home Assistant</title>
+    <!--<title>Home Assistant</title>-->
+    <title>Funkdomotics</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
