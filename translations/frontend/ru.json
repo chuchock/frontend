@@ -480,8 +480,10 @@
             "delete": "Удалить",
             "error_required": "Обязательное поле",
             "loading": "Загрузка",
+            "menu": "Меню",
             "next": "Далее",
             "no": "Нет",
+            "overflow_menu": "Выпадающее меню",
             "previous": "Назад",
             "refresh": "Обновить",
             "save": "Сохранить",
@@ -692,10 +694,10 @@
             },
             "zha_device_info": {
                 "buttons": {
-                    "add": "Добавить устройства",
+                    "add": "Добавить устройства через это устройство",
                     "reconfigure": "Перенастроить устройство",
                     "remove": "Удалить устройство",
-                    "zigbee_information": "Информация о Zigbee"
+                    "zigbee_information": "Подпись устройства Zigbee"
                 },
                 "confirmations": {
                     "remove": "Вы уверены, что хотите удалить это устройство?"
@@ -911,6 +913,8 @@
                         "introduction": "Используйте автоматизацию, чтобы оживить Ваш дом.",
                         "load_error_not_editable": "Доступны для редактирования только автоматизации из automations.yaml.",
                         "load_error_unknown": "Ошибка загрузки автоматизации ({err_no}).",
+                        "move_down": "Переместить ниже",
+                        "move_up": "Переместить выше",
                         "save": "Сохранить",
                         "triggers": {
                             "add": "Добавить триггер",
@@ -1367,6 +1371,26 @@
                         "input_text": "Текст"
                     }
                 },
+                "info": {
+                    "built_using": "Создано с использованием",
+                    "caption": "О системе",
+                    "custom_uis": "Кастомные интерфейсы:",
+                    "description": "Информация об установленном Home Assistant",
+                    "developed_by": "Разработано множеством замечательных людей.",
+                    "documentation": "Документация",
+                    "frontend": "пользовательский интерфейс",
+                    "frontend_version": "Версия интерфейса: {version} - {type}",
+                    "home_assistant_logo": "Логотип Home Assistant",
+                    "icons_by": "Значки от",
+                    "integrations": "Интеграции",
+                    "issues": "Вопросы",
+                    "license": "Опубликовано под лицензией Apache 2.0",
+                    "path_configuration": "Путь к configuration.yaml: {path}",
+                    "server": "сервер",
+                    "source": "Исходный код:",
+                    "system_health_error": "Компонент System Health не загружен. Добавьте 'system_health:' в файл configuration.yaml.",
+                    "title": "О системе"
+                },
                 "integrations": {
                     "add_integration": "Добавить интеграцию",
                     "caption": "Интеграции",
@@ -1438,6 +1462,19 @@
                     "rename_input_label": "Название"
                 },
                 "introduction": "Здесь можно настроить Home Assistant. Пока что не все настройки доступны из интерфейса, но мы работаем над этим.",
+                "logs": {
+                    "caption": "Журнал работы сервера",
+                    "clear": "Очистить",
+                    "description": "Просмотр журналов работы сервера Home Assistant",
+                    "details": "Уровень: {level}",
+                    "load_full_log": "Показать весь журнал",
+                    "loading_log": "Загрузка журнала…",
+                    "multiple_messages": "первое сообщение получено {time} и повторялось {counter} раз",
+                    "no_errors": "Нет сообщений об ошибках.",
+                    "no_issues": "Нет сообщений о проблемах.",
+                    "refresh": "Обновить",
+                    "title": "Лог"
+                },
                 "lovelace": {
                     "caption": "Панели Lovelace",
                     "dashboards": {
@@ -1623,6 +1660,11 @@
                             "core": "Обновить местоположение и кастомизацию",
                             "group": "Перезагрузить группы",
                             "heading": "Перезагрузка конфигурации YAML",
+                            "input_boolean": "Перезагрузить вспомогательные переключатели",
+                            "input_datetime": "Перезагрузить вспомогательные элементы ввода даты и времени",
+                            "input_number": "Перезагрузить вспомогательные элементы ввода чисел",
+                            "input_select": "Перезагрузить вспомогательные выпадающие списки",
+                            "input_text": "Перезагрузить вспомогательные элементы ввода текста",
                             "introduction": "Некоторые компоненты Home Assistant можно перезагрузить без необходимости перезапуска всей системы. Перезагрузка выгружает текущую конфигурацию YAML и загружает новую.",
                             "person": "Перезагрузить персоны",
                             "scene": "Перезагрузить сцены",
@@ -1686,8 +1728,11 @@
                 },
                 "zha": {
                     "add_device_page": {
+                        "discovered_text": "Устройства появятся здесь, когда будут обнаружены.",
                         "discovery_text": "Здесь будут отображаться обнаруженные устройства. Следуйте инструкциям для Вашего устройства, чтобы включить режим сопряжения.",
                         "header": "Zigbee Home Automation",
+                        "no_devices_found": "Устройства не найдены, убедитесь, что они находятся в режиме сопряжения, и держите их активными во время обнаружения.",
+                        "pairing_mode": "Убедитесь, что подключаемые устройства находятся в режиме сопряжения. Чтобы узнать, как активировать режим сопряжения, ознакомьтесь с инструкциями для Вашего устройства.",
                         "search_again": "Повторный поиск",
                         "spinner": "Поиск Zigbee устройств..."
                     },
@@ -1695,6 +1740,7 @@
                         "caption": "Добавить устройства",
                         "description": "Добавить устройства в сеть Zigbee"
                     },
+                    "button": "Настроить",
                     "caption": "Zigbee Home Automation",
                     "cluster_attributes": {
                         "attributes_of_cluster": "Атрибуты выбранного кластера",
@@ -1773,6 +1819,9 @@
                         "header": "Управление сетью",
                         "introduction": "Команды, которые влияют на всю сеть"
                     },
+                    "network": {
+                        "caption": "Сеть"
+                    },
                     "node_management": {
                         "header": "Управление устройством",
                         "help_node_dropdown": "Выберите устройство для просмотра индивидуальных параметров.",
@@ -1812,6 +1861,7 @@
                     "no_zones_created_yet": "У Вас еще нет добавленных зон."
                 },
                 "zwave": {
+                    "button": "Настроить",
                     "caption": "Z-Wave",
                     "common": {
                         "index": "Индекс",
@@ -1923,35 +1973,6 @@
                         "subscribe_to": "Событие",
                         "title": "События",
                         "type": "Событие"
-                    },
-                    "info": {
-                        "built_using": "Создано с использованием",
-                        "custom_uis": "Кастомные интерфейсы:",
-                        "developed_by": "Разработано множеством замечательных людей.",
-                        "documentation": "Документация",
-                        "frontend": "пользовательский интерфейс",
-                        "frontend_version": "Версия интерфейса: {version} - {type}",
-                        "home_assistant_logo": "Логотип Home Assistant",
-                        "icons_by": "Значки от",
-                        "integrations": "Интеграции",
-                        "issues": "Вопросы",
-                        "license": "Опубликовано под лицензией Apache 2.0",
-                        "path_configuration": "Путь к configuration.yaml: {path}",
-                        "server": "сервер",
-                        "source": "Исходный код:",
-                        "system_health_error": "Компонент System Health не загружен. Добавьте 'system_health:' в файл configuration.yaml.",
-                        "title": "О системе"
-                    },
-                    "logs": {
-                        "clear": "Очистить",
-                        "details": "Уровень: {level}",
-                        "load_full_log": "Показать весь журнал",
-                        "loading_log": "Загрузка журнала…",
-                        "multiple_messages": "первое сообщение получено {time} и повторялось {counter} раз",
-                        "no_errors": "Нет сообщений об ошибках.",
-                        "no_issues": "Нет сообщений о проблемах.",
-                        "refresh": "Обновить",
-                        "title": "Лог"
                     },
                     "mqtt": {
                         "description_listen": "Подписаться на топик",
